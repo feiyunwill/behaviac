@@ -20,6 +20,8 @@
 #include <string>
 #include <algorithm>
 #include "behaviac/common/memory/stl_allocator.h"
+#pragma warning(push)
+#pragma warning(disable:4244) /* nonstandard extension : single line comment */
 
 namespace behaviac {
 #if BEHAVIAC_USE_CUSTOMSTRING
@@ -53,4 +55,5 @@ namespace behaviac {
 
 }
 
+#pragma warning(pop)
 #endif //#ifndef _BEHAVIAC_COMMON_CONTAINER_STRING_H_
